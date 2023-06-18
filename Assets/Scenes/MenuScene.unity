@@ -901,13 +901,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RunInBackground: 1
-  LogLevel: 1
+  LogLevel: 0
   NetworkConfig:
     ProtocolVersion: 0
     NetworkTransport: {fileID: 718243419}
     PlayerPrefab: {fileID: 4382111015487628162, guid: d152b400480434844ae2320c2dc7f7c2,
       type: 3}
-    NetworkPrefabs: []
+    NetworkPrefabs:
+    - Override: 0
+      Prefab: {fileID: 4382111015487628162, guid: d152b400480434844ae2320c2dc7f7c2,
+        type: 3}
+      SourcePrefabToOverride: {fileID: 0}
+      SourceHashToOverride: 0
+      OverridingTargetPrefab: {fileID: 0}
     TickRate: 30
     ClientConnectionBufferTimeout: 10
     ConnectionApproval: 0
@@ -1082,6 +1088,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1034384312}
   - component: {fileID: 1034384313}
+  - component: {fileID: 1034384314}
   m_Layer: 0
   m_Name: Menu
   m_TagString: Untagged
@@ -1118,6 +1125,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gamePlaySceneName: Gameplay
+--- !u!114 &1034384314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034384311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 1881583417
+  AlwaysReplicateAsRoot: 0
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
 --- !u!1 &1278061057
 GameObject:
   m_ObjectHideFlags: 0

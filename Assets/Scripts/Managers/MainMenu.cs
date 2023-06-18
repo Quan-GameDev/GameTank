@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Unity.Netcode;
 
-public class MainMenu : MonoBehaviour
+public class MainMenu : NetworkBehaviour
 {
     //Load scene
    public void Play(){

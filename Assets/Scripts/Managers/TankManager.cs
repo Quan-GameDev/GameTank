@@ -1,8 +1,9 @@
 ﻿using System;
 using UnityEngine;
+using Unity.Netcode;
 
 [Serializable]
-public class TankManager
+public class TankManager 
 {
     public Color m_PlayerColor;            
     public Transform m_SpawnPoint;         
